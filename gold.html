@@ -111,7 +111,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title">
-                        <h3>Tỷ giá đồng: USD</h3>
+                        <h3>Giá vàng: SJC</h3>
                     </div>
                 </div>
             </div>
@@ -128,48 +128,27 @@
                         <div class="col-md-12">
                             <div class="full">
                                 <div class="heading_main text_align_center">
-                                    <h2><span class="theme_color"></span>Chi tiết tỷ giá các đồng</h2>    
+                                    <h2><span class="theme_color"></span>Chi tiết các hãng vàng</h2>    
                                 </div>
                             </div>
                         </div>
-                        <a href="#">USD</a>
-                        <a href="#">EUR</a>
-                        <a href="#">AUD</a>
-                        <a href="#">SGD</a>
-                        <a href="#">JPY</a>
-                        <a href="#">KRW</a>
-                        <a href="#">HKD</a>
-                        <a href="#">CNY</a>
-                        <a href="#">KRR</a>
-                        <a href="#">INR</a>
-                        <a href="#">GBP</a>
-                        <a href="#">MYR</a>
-                        <a href="#">SEK</a>
                     </div>
-                    <hr>
                     <form action="" method="POST">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <br>
                         <div class="col-md-7 pull-left">
                             <div class="row">
                             <div class="col-md-3 pull-left">
-                                <label for="form-control" style="margin-top:10px;">Chọn ngân hàng</label>
+                                <label for="form-control" style="margin-top:10px;">Chọn hãng vàng</label>
                             </div>
                             <div class="col-md-6 pull-right">
                                 <select class="form-control" name="bankID" id="">
-                                    <option value="1">Techcombank</option>
-                                    <option value="2">HSBC</option>
-                                    <option value="3">SHB</option>
-                                    <option value="4">TPB</option>
-                                    <option value="5">BIDV</option>
-                                    <option value="6">VietinBank</option>
-                                    <option value="7">SacomBank</option>
-                                    <option value="8">VietcomBank</option>
-                                    <option value="9">DongABank</option>
-                                    <option value="10">ACB</option>
-                                    <option value="11">ArgiBank</option>
-                                    <option value="12">EximBank</option>
-                                    <option value="13">MBank</option>
+                                    <option value="1">SJC</option>
+                                    <option value="2">PNG</option>
+                                    <option value="3">Phú Quý</option>
+                                    <option value="4">Bảo Tín Minh Châu</option>
+                                    <option value="5">DOJI</option>
+                                    <option value="6">Giá vàng thế giới</option>
                                 </select>
                             </div>
                             <div class="col-md-3">
@@ -192,7 +171,7 @@
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                            <h2><span class="theme_color"></span>USD</h2>    
+                            <h2><span class="theme_color"></span>SJC</h2>    
                         </div>
                     </div>
                 </div>
@@ -204,69 +183,60 @@
                         <table class="table table-hover table-bordered" id="table-exchange-page">
                             <thead>
                                 <tr>
-                                    <th class="text-center">Ngân hàng</th>
-                                    <th class="text-center">Mua tiền mặt</th>
-                                    <th class="text-center">Mua chuyển khoản</th>
-                                    <th class="text-center">Bán tiền mặt</th>
-                                    <th class="text-center">Bán chuyển khoản</th>
+                                    <th class="text-center"> </th>
+                                    <th class="text-center">Loại</th>
+                                    <th class="text-center">Mua vào</th>
+                                    <th class="text-center">Bán ra</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th class="bg-gray">Techcombank</th>
+                                    <th class="bg-gray">Hà Nội</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">HSBC</th>
+                                    <th class="bg-gray">TP Hồ Chí Minh</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">VietcomBank</th>
+                                    <th class="bg-gray">Đà Nẵng</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">SHB</th>
+                                    <th class="bg-gray">Huế</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">BIDV</th>
+                                    <th class="bg-gray">Bình Dương</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">ArgiBank</th>
+                                    <th class="bg-gray">Tuyên Quang</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">VietinBank</th>
+                                    <th class="bg-gray">Hải Phòng</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">DongABank</th>
+                                    <th class="bg-gray">Cần Thơ</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
                                 </tr>
                             </tbody>
                         </table>

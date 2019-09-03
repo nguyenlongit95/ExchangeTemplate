@@ -111,7 +111,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title">
-                        <h3>Tỷ giá đồng: USD</h3>
+                        <h3>Ngân hàng: VietcomBank</h3>
                     </div>
                 </div>
             </div>
@@ -119,72 +119,71 @@
     </div>
     <!-- End Banner -->
 
-    <!-- Start Banner -->
-    <div class="section margin-top-25">
+     <!-- Start Banner -->
+     <div class="section margin-top-25">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="btn-item">
-                        <div class="col-md-12">
-                            <div class="full">
-                                <div class="heading_main text_align_center">
-                                    <h2><span class="theme_color"></span>Chi tiết tỷ giá các đồng</h2>    
+                        <div class="btn-item">
+                            <div class="col-md-12">
+                                <div class="full">
+                                    <div class="heading_main text_align_center">
+                                        <h2><span class="theme_color"></span>Chi tiết tỷ giá các ngân hàng</h2>    
+                                    </div>
                                 </div>
                             </div>
+                            <a href="#">Techcombank</a>
+                            <a href="#">HSBC</a>
+                            <a href="#">SHB</a>
+                            <a href="#">TPB</a>
+                            <a href="#">BIDV</a>
+                            <a href="#">VietinBank</a>
+                            <a href="#">SacomBank</a>
+                            <a href="#">VietcomBank</a>
+                            <a href="#">DongABank</a>
+                            <a href="#">ACB</a>
+                            <a href="#">ArgiBank</a>
+                            <a href="#">EximBank</a>
+                            <a href="#">MBank</a>
                         </div>
-                        <a href="#">USD</a>
-                        <a href="#">EUR</a>
-                        <a href="#">AUD</a>
-                        <a href="#">SGD</a>
-                        <a href="#">JPY</a>
-                        <a href="#">KRW</a>
-                        <a href="#">HKD</a>
-                        <a href="#">CNY</a>
-                        <a href="#">KRR</a>
-                        <a href="#">INR</a>
-                        <a href="#">GBP</a>
-                        <a href="#">MYR</a>
-                        <a href="#">SEK</a>
+                        <hr>
+                        <form action="" method="POST">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <br>
+                            <div class="col-md-7 pull-left">
+                                <div class="row">
+                                <div class="col-md-3 pull-left">
+                                    <label for="form-control" style="margin-top:10px;">Chọn ngân hàng</label>
+                                </div>
+                                <div class="col-md-6 pull-right">
+                                    <select class="form-control" name="bankID" id="">
+                                        <option value="1">Techcombank</option>
+                                        <option value="2">HSBC</option>
+                                        <option value="3">SHB</option>
+                                        <option value="4">TPB</option>
+                                        <option value="5">BIDV</option>
+                                        <option value="6">VietinBank</option>
+                                        <option value="7">SacomBank</option>
+                                        <option value="8">VietcomBank</option>
+                                        <option value="9">DongABank</option>
+                                        <option value="10">ACB</option>
+                                        <option value="11">ArgiBank</option>
+                                        <option value="12">EximBank</option>
+                                        <option value="13">MBank</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="submit" name="check" value="Tra cứu" class="btn btn-primary" style="height:45px;">
+                                </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <hr>
-                    <form action="" method="POST">
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                        <br>
-                        <div class="col-md-7 pull-left">
-                            <div class="row">
-                            <div class="col-md-3 pull-left">
-                                <label for="form-control" style="margin-top:10px;">Chọn ngân hàng</label>
-                            </div>
-                            <div class="col-md-6 pull-right">
-                                <select class="form-control" name="bankID" id="">
-                                    <option value="1">Techcombank</option>
-                                    <option value="2">HSBC</option>
-                                    <option value="3">SHB</option>
-                                    <option value="4">TPB</option>
-                                    <option value="5">BIDV</option>
-                                    <option value="6">VietinBank</option>
-                                    <option value="7">SacomBank</option>
-                                    <option value="8">VietcomBank</option>
-                                    <option value="9">DongABank</option>
-                                    <option value="10">ACB</option>
-                                    <option value="11">ArgiBank</option>
-                                    <option value="12">EximBank</option>
-                                    <option value="13">MBank</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3">
-                                <input type="submit" name="check" value="Tra cứu" class="btn btn-primary" style="height:45px;">
-                            </div>
-                            </div>
-                        </div>
-                    </form>
                 </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- End Banner -->
-
+    
     <!-- section exchanges -->
     <div class="section layout_padding">
         <div class="container">
@@ -192,11 +191,12 @@
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                            <h2><span class="theme_color"></span>USD</h2>    
+                            <h2><span class="theme_color"></span>VietcomBank</h2>    
                         </div>
                     </div>
                 </div>
             </div>
+           
             <!-- table exchanges pages home -->
             <div class="table-exchange-home">
                 <div class="col-md-12 pull-right">
@@ -204,7 +204,7 @@
                         <table class="table table-hover table-bordered" id="table-exchange-page">
                             <thead>
                                 <tr>
-                                    <th class="text-center">Ngân hàng</th>
+                                    <th class="text-center">Ngoại tệ</th>
                                     <th class="text-center">Mua tiền mặt</th>
                                     <th class="text-center">Mua chuyển khoản</th>
                                     <th class="text-center">Bán tiền mặt</th>
@@ -213,56 +213,56 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th class="bg-gray">Techcombank</th>
+                                    <th class="bg-gray">USD</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
                                     <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">HSBC</th>
+                                    <th class="bg-gray">AUD</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
                                     <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">VietcomBank</th>
+                                    <th class="bg-gray">SGD</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
                                     <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">SHB</th>
+                                    <th class="bg-gray">RUB</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
                                     <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">BIDV</th>
+                                    <th class="bg-gray">CNY</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
                                     <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">ArgiBank</th>
+                                    <th class="bg-gray">JPY</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
                                     <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">VietinBank</th>
+                                    <th class="bg-gray">KRW</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
                                     <th>15,359</th>
                                 </tr>
                                 <tr>
-                                    <th class="bg-gray">DongABank</th>
+                                    <th class="bg-gray">EUR</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
@@ -273,27 +273,37 @@
                     </div>
                 </div>
             </div>
+            <!-- end table exchange home -->
+            <p>
+                Đồng Euro (€; mã ISO: EUR, còn gọi là Âu kim hay Đồng tiền chung châu Âu) là đơn vị tiền tệ của Liên minh Tiền tệ châu Âu, là tiền tệ chính thức trong 18 quốc gia thành viên của Liên minh châu Âu (Áo, Bỉ, Bồ Đào Nha, Đức, Hà Lan, Hy Lạp, Ireland, Luxembourg, Pháp, Phần Lan, Tây Ban Nha, Ý, Slovenia, Malta, Cộng hòa Síp, Estonia, Latvia, Litva) và trong 6 nước và lãnh thổ không thuộc Liên minh châu Âu.
+
+                Vào ngày 1 tháng 1 năm 1999 tỷ lệ hối đoái giữa Euro và các đơn vị tiền tệ quốc gia được quy định không thể thay đổi và Euro trở thành tiền tệ chính thức. Việc phát hành đồng Euro rộng rãi đến người tiêu dùng bắt đầu từ ngày 1 tháng 1 năm 2002.
+                
+                Tiền giấy Euro giống nhau hoàn toàn trong tất cả các quốc gia.
+                
+                Tiền giấy Euro có mệnh giá 5 Euro, 10 Euro, 50 Euro, 100 Euro, 200 Euro và 500 Euro. Mặt trước có hình của một cửa sổ hay phần trước của một cánh cửa, mặt sau là một chiếc cầu. Tháng 7 năm 2017, được sự chấp thuận của Ngân hàng Trung ương Châu Âu, Ngân hàng Trung ương Đức chính thức phát hành đồng hiện kim bằng giấy với mệnh giá là 0 euro (giá bán là 2,5 euro) đáp ứng nhu cầu của những người có sở thích sưu tập tiền tệ. Một mặt in chân dung nhà thần học Martin Luther ở bên phải, cùng căn phòng làm việc của ông tại Lâu đài Wartburg; mặt còn lại gồm tổ hợp hình ảnh quy tụ các kiến trúc tiêu biểu thuộc Liên minh châu Âu, bên góc phải là bức tranh nàng Mona Lisa.[1]
+                
+                Tiền kim loại Euro cùng một mệnh giá giống nhau ở mặt trước, nhưng có trang trí khác nhau ở mặt sau, đặc trưng cho từng quốc gia phát hành.
+                
+                Các loại mệnh giá tiền Euro đang lưu hành
+                
+                Euro có 7 mệnh giá tiền giấy ( €5 , €10 , €20 , €50 , €100 , €200 và €500 )
+                Có 8 mệnh giá tiền xu cho Euro ( 1c , 2c , 5c , 10c , 20c , 50c , €1 và €2 )
+                Web tỷ giá cập nhiật liên tục, chính xác tỷ giá mua, bán, chuyển khoản đồng Euro từ các ngân hàng lớn có hỗ trợ giao dịch đồng Euro. cung cấp các công cụ chuyển đổi, quy đổi đồng Euro ra các đồng tiền khác
+                
+                tiền euro
+                đồng euro
+                tỷ giá euro
+                ty gia euro
+                euro to vnd
+                eur to vnd
+                tỷ giá euro hôm nay
+                1 eur to vnd
+                1 eur = vnd
+            </p>
         </div>
     </div>
     <!-- end section -->
-
-    <!-- Start Banner -->
-    <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="banner_title">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti cum, temporibus tempora soluta assumenda est, veritatis asperiores possimus placeat quis nesciunt fugiat officiis ipsa quae, unde facere eos recusandae sapiente?</p>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit eos ipsum dignissimos voluptatem voluptatibus quod magni vel distinctio asperiores quibusdam esse consequuntur ut amet excepturi labore, delectus voluptates hic consequatur.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, non ad. Molestiae velit nemo minus, tempora saepe accusantium exercitationem, natus sint sapiente officiis doloribus assumenda minima ea suscipit, autem optio.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit unde vel inventore nisi culpa libero perspiciatis placeat corrupti, maxime consequatur tenetur suscipit consectetur molestiae delectus necessitatibus excepturi eius doloremque voluptates?</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, id? Maxime, hic animi sit nulla voluptatibus non dolores quam amet reiciendis rem doloribus ducimus molestias sequi temporibus quasi dolorum soluta.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Banner -->
    
     <!-- Start Footer -->
     <footer class="footer-box">

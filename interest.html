@@ -111,7 +111,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="banner_title">
-                        <h3>Tỷ giá đồng: USD</h3>
+                        <h3>Lãi suất</h3>
                     </div>
                 </div>
             </div>
@@ -128,25 +128,11 @@
                         <div class="col-md-12">
                             <div class="full">
                                 <div class="heading_main text_align_center">
-                                    <h2><span class="theme_color"></span>Chi tiết tỷ giá các đồng</h2>    
+                                    <h2><span class="theme_color"></span>Chi tiết lãi suất các ngân hàng</h2>    
                                 </div>
                             </div>
                         </div>
-                        <a href="#">USD</a>
-                        <a href="#">EUR</a>
-                        <a href="#">AUD</a>
-                        <a href="#">SGD</a>
-                        <a href="#">JPY</a>
-                        <a href="#">KRW</a>
-                        <a href="#">HKD</a>
-                        <a href="#">CNY</a>
-                        <a href="#">KRR</a>
-                        <a href="#">INR</a>
-                        <a href="#">GBP</a>
-                        <a href="#">MYR</a>
-                        <a href="#">SEK</a>
                     </div>
-                    <hr>
                     <form action="" method="POST">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <br>
@@ -184,7 +170,7 @@
         </div>
     </div>
     <!-- End Banner -->
-
+    
     <!-- section exchanges -->
     <div class="section layout_padding">
         <div class="container">
@@ -192,7 +178,7 @@
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                            <h2><span class="theme_color"></span>USD</h2>    
+                            <h2><span class="theme_color"></span>Lãi suất tại quầy</h2>    
                         </div>
                     </div>
                 </div>
@@ -205,68 +191,214 @@
                             <thead>
                                 <tr>
                                     <th class="text-center">Ngân hàng</th>
-                                    <th class="text-center">Mua tiền mặt</th>
-                                    <th class="text-center">Mua chuyển khoản</th>
-                                    <th class="text-center">Bán tiền mặt</th>
-                                    <th class="text-center">Bán chuyển khoản</th>
+                                    <th class="text-center">1 tháng</th>
+                                    <th class="text-center">3 tháng</th>
+                                    <th class="text-center">6 tháng</th>
+                                    <th class="text-center">9 tháng</th>
+                                    <th class="text-center">12 tháng</th>
+                                    <th class="text-center">24 tháng</th>
+                                    <th class="text-center">36 tháng</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th class="bg-gray">Techcombank</th>
-                                    <th>15,141</th>
-                                    <th>15,333</th>
-                                    <th>15,290</th>
-                                    <th>15,359</th>
-                                </tr>
-                                <tr>
-                                    <th class="bg-gray">HSBC</th>
-                                    <th>15,141</th>
-                                    <th>15,333</th>
-                                    <th>15,290</th>
-                                    <th>15,359</th>
-                                </tr>
                                 <tr>
                                     <th class="bg-gray">VietcomBank</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
-                                </tr>
-                                <tr>
-                                    <th class="bg-gray">SHB</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">Techcombank</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">OceanBank</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
                                 </tr>
                                 <tr>
                                     <th class="bg-gray">BIDV</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
-                                </tr>
-                                <tr>
-                                    <th class="bg-gray">ArgiBank</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
+                                    <th>15,290</th>
                                 </tr>
                                 <tr>
                                     <th class="bg-gray">VietinBank</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
-                                </tr>
-                                <tr>
-                                    <th class="bg-gray">DongABank</th>
                                     <th>15,141</th>
                                     <th>15,333</th>
                                     <th>15,290</th>
-                                    <th>15,359</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">Bắc Á</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">SCB</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">OCB</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- section exchanges -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+                            <h2><span class="theme_color"></span>Lãi suất online</h2>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- table exchanges pages home -->
+            <div class="table-exchange-home">
+                <div class="col-md-12 pull-right">
+                    <div class="row">   
+                        <table class="table table-hover table-bordered" id="table-exchange-page">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Ngân hàng</th>
+                                    <th class="text-center">1 tháng</th>
+                                    <th class="text-center">3 tháng</th>
+                                    <th class="text-center">6 tháng</th>
+                                    <th class="text-center">9 tháng</th>
+                                    <th class="text-center">12 tháng</th>
+                                    <th class="text-center">24 tháng</th>
+                                    <th class="text-center">36 tháng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="bg-gray">VietcomBank</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">Techcombank</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">OceanBank</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">BIDV</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">VietinBank</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">Bắc Á</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">SCB</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th class="bg-gray">OCB</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,290</th>
                                 </tr>
                             </tbody>
                         </table>

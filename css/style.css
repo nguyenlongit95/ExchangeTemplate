@@ -596,7 +596,7 @@ a.navbar-brand {
 .menu_orange_section {
     float: right;
     position: relative;
-    width: 70%;
+    width: 100%;
 }
 
 .menu_orange_section::after {
@@ -1962,7 +1962,7 @@ p {
 }
 
 .heading_main h2::after {
-    width: 250px;
+    width: 100%;
     height: 8px;
     background: #ff880e;
     content: "";
@@ -2365,3 +2365,93 @@ ul.bottom_menu li {
     background: #050000;
 }
 
+/**
+* More code CSS here
+* 
+*/
+.clear-fix {
+	margin-top:3%;
+}
+
+.heading_main {
+	/* margin-top:3%; */
+}
+
+.margin-top-25 {
+	margin-top: 25px;
+}
+
+#table-home ul li{
+	padding: 15px;	
+}
+
+#table-home ul li .active {
+	color: #ff880e;
+}
+
+#table-exchange-home thead th .bank-img{
+	width:120px;
+	float:left;
+}
+
+#table-exchange-home thead th .bank-name{
+	padding-left:5px;
+}
+
+#table-exchange-home thead img{
+	height:18px;
+	width:18px;
+	vertical-align: middle;
+	float:left;
+	margin-top:4px;
+}
+
+#table-exchange-home tbody{
+	overflow: scroll;
+}
+
+#currency-code {
+	inline-size: 0%;
+}
+
+#table-home table tbody{
+	display: block;
+	overflow: scroll;
+	white-space: nowrap;
+}
+
+#table-home table tbody th {
+	text-align: center;
+}
+
+.wrap-home {
+	width:100%;
+	height:auto;
+	overflow: auto;
+}
+
+#table-currency-code-home {
+	width:100%;
+	text-align: left;
+}
+
+#table-currency-code-home tbody { 
+	background: rgba(0,0,0,.075);
+}
+
+#table-gold-home {
+	text-align: center;
+}
+
+.bg-gray {
+	background: rgba(0,0,0,.075);
+}
+
+#table-exchange-page {
+	text-align: center;
+}
+
+.btn-item a{
+    padding: 5px 10px 5px 10px;
+    border: 1px double #00000017;
+}

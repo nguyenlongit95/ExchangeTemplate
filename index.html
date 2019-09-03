@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Exchange Currency - Responsive HTML5 Template</title>
+    <title>Exchange Currency</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -59,9 +59,9 @@
                     </div>
                     <div class="site_information">
                         <ul>
-                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchang@gmail.com</a></li>
+                            <li><a href="mailto:exchang@gmail.com"><img src="images/mail_icon.png" alt="#" />exchange@gmail.com</a></li>
                             <li><a href="tel:exchang@gmail.com"><img src="images/phone_icon.png" alt="#" />+7123569847</a></li>
-                            <li><a class="join_bt" href="#">Join us</a></li>
+                            <li><a class="join_bt" href="contact.html">Contact US</a></li>
                         </ul>
                     </div>
                 </div>
@@ -81,12 +81,13 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="exchange.html">Exchange</a></li>
-                        <li><a class="nav-link" href="services.html">Services</a></li>
-                        <li><a class="nav-link" href="new.html">News</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link active" href="index.html">TRANG CHỦ</a></li>
+                        <li><a class="nav-link" href="banking.html">TỶ GIÁ NGÂN HÀNG</a></li>
+                        <li><a class="nav-link" href="exchange.html">NGOẠI TỆ</a></li>
+                        <li><a class="nav-link" href="gold.html">GIÁ VÀNG</a></li>
+                        <li><a class="nav-link" href="interest.html">LÃI SUẤT</a></li>
+                        <li><a class="nav-link" href="vitrual.html">TIỀN ẢO</a></li>
+                        <li><a class="nav-link" href="new.html">TIN TỨC</a></li>
                     </ul>
                 </div>
                      </div>
@@ -117,7 +118,7 @@
                                     <div class="slide_text white_fonts">
                                         <h3>Progress & Success<br><strong>Currency</strong></h3>
                                         <br>
-                                        <a class="start_exchange_bt" href="exchange.html">Start Exchange ></a>
+                                        <a class="start_exchange_bt" href="exchange.html">Tìm hiểu ></a>
                                     </div>
                                 </div>
                             </div>
@@ -143,134 +144,336 @@
     </div>
     <!-- End Banner -->
     
-	<!-- section -->
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full text_align_right_img">
-                        <img src="images/img1.png" alt="#" />
-                    </div>
-                </div>
-                <div class="col-md-6 layout_padding">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-						   <h2><span class="theme_color">Welcome</span> To Exchange</h2>	
-                        </div>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">About more ></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-	<!-- end section -->
-    <!-- section -->
+	<!-- section exchanges -->
     <div class="section layout_padding">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="full">
                         <div class="heading_main text_align_center">
-                           <h2><span class="theme_color"></span>Services</h2>    
+                           <h2><span class="theme_color"></span>Tỷ giá</h2>    
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="full services_blog">
-                       <img class="img-responsive" src="images/s1.png" alt="#" />
-                       <h4>Safe & Secure</h4>
-                    </div>
+            
+            <div class="group-tabs" id="table-home">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active" style="padding-left:0px;"><a href="#muatienmat" class="active" aria-controls="muatienmat" role="tab" data-toggle="tab">Mua tiền mặt</a></li>
+                  <li role="presentation"><a href="#muachuyenkhoan" aria-controls="muachuyenkhoan" role="tab" data-toggle="tab">Mua chuyển khoản</a></li>
+                  <li role="presentation"><a href="#bantienmat" aria-controls="bantienmat" role="tab" data-toggle="tab">Bán tiền mặt</a></li>
+                  <li role="presentation"><a href="#banchuyenkhoan" aria-controls="banchuyenkhoan" role="tab" data-toggle="tab">Bán chuyển khoản</a></li>
+                </ul>
+            </div>
+            <!-- table exchanges pages home -->
+            <div class="table-exchange-home">
+                <div class="col-md-2 pull-left">
+                        <div class="row">
+                        <table class="table table-hover table-bordered" id="table-currency-code-home">
+                            <thead>
+                                <tr>
+                                    <th id="currency-code">Mã ngoại tệ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>AUD</th>
+                                </tr>
+                                <tr>
+                                    <th>EUR</th>
+                                </tr>
+                                <tr>
+                                    <th>USD</th>
+                                </tr>
+                                <tr>
+                                    <th>CNY</th>
+                                </tr>
+                                <tr>
+                                    <th>JPY</th>
+                                </tr>
+                                <tr>
+                                    <th>SGD</th>
+                                </tr>
+                                <tr>
+                                    <th>CAD</th>
+                                </tr>
+                                <tr>
+                                    <th>KRW</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="full services_blog">
-                        <img class="img-responsive" src="images/s2.png" alt="#" />
-                        <h4>Mobile Apps</h4>
+                    
+                <div class="col-md-10 pull-right">
+                    <div class="wrap-home">
+                    <div class="row">   
+                        <table class="table table-hover table-bordered" id="table-exchange-home">
+                            <thead>
+                                <tr>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/TCB.png" class="pull-left"> <span class="bank-name pull-left">Techcombank</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/VCB.png" class="pull-left" alt=""><span class="bank-name pull-left">Vietcombank</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/VTB.png" class="pull-left" alt=""><span class="bank-name pull-left">Vietinbank</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/SAC.png" class="pull-left" alt=""><span class="bank-name pull-left">Sacombank</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/SHB.png" class="pull-left" alt=""><span class="bank-name pull-left">SHB</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/BIDV.png" class="pull-left" alt=""><span class="bank-name pull-left">BIDV</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/acb.png" class="pull-left" alt=""><span class="bank-name pull-left">ACB</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/agribank.png" class="pull-left" alt=""><span class="bank-name pull-left">ArgiBank</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/exim.jpg" class="pull-left" alt=""><span class="bank-name pull-left">Eximbank</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/HSBC.png" class="pull-left" alt=""><span class="bank-name pull-left">HSBC</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/TPB.png" class="pull-left" alt=""><span class="bank-name pull-left">TPB</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/DAB.png" class="pull-left" alt=""><span class="bank-name pull-left">DongA</span></span></th>
+                                    <th class="text-center"><span class="bank-img"><img src="images/Bank/mbank.png" class="pull-left" alt=""><span class="bank-name pull-left">MBank</span></span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                    <th>15,359</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                    <th>15,357</th>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="full services_blog">
-                        <img class="img-responsive" src="images/s3.png" alt="#" />
-                        <h4>Wallet</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="full services_blog">
-                        <img class="img-responsive" src="images/s4.png" alt="#" />
-                        <h4>Experts Support</h4>
                     </div>
                 </div>
             </div>
-            <div class="row margin-top_30">
-                <div class="col-sm-12">
+            <!-- end table exchange home -->
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- section exchanges -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <div class="full">
-                        <div class="center">
-                            <a class="main_bt" href="#">About more ></a>
+                        <div class="heading_main text_align_center">
+                            <h2><span class="theme_color"></span>Giá vàng SJC</h2>    
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- end section -->
-    <!-- section -->
-    <div class="section white_fonts" style="background: #2a2a2a;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" style="background: #fff;">
-                    <div class="full text_align_right_img">
-                        <img src="images/img2.png" alt="#" />
+            <!-- table exchanges pages home -->
+            <div class="table-exchange-home">
+                <div class="col-md-2 pull-left">
+                        <div class="row">
+                        <table class="table table-hover table-bordered" id="table-currency-code-home">
+                            <thead>
+                                <tr>
+                                    <th id="currency-code">-</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Hồ Chí Minh</th>
+                                </tr>
+                                <tr>
+                                    <th>Hà Nội</th>
+                                </tr>
+                                <tr>
+                                    <th>Đà Nẵng</th>
+                                </tr>
+                                <tr>
+                                    <th>Nha Trang</th>
+                                </tr>
+                                <tr>
+                                    <th>Cà Mau</th>
+                                </tr>
+                                <tr>
+                                    <th>Buôn Ma Thuật</th>
+                                </tr>
+                                <tr>
+                                    <th>Huế</th>
+                                </tr>
+                                <tr>
+                                    <th>Đà Lạt</th>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="col-md-6 layout_padding">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-                           <h2><span class="theme_color">Apply for</span> Exchange</h2>    
-                        </div>
+                    
+                <div class="col-md-10 pull-left">
+                    <div class="wrap-home">
+                    <div class="row">   
+                        <table class="table table-hover table-bordered" id="table-gold-home">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Loại</th>
+                                    <th class="text-center">Mua vào</th>
+                                    <th class="text-center">Bán ra</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                </tr>
+                                <tr>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                </tr>
+                                <tr>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                </tr>
+                                <tr>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                </tr>
+                                <tr>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                    <th>3600000</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                </tr>
+                                <tr>
+                                    <th>15,141</th>
+                                    <th>15,333</th>
+                                    <th>15,290</th>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Exchange ></a>
                     </div>
                 </div>
             </div>
+            <!-- end table exchange home -->
         </div>
     </div>
     <!-- end section -->
-	<!-- section -->
-    <div class="section layout_padding about_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="full paddding_left_15">
-                        <div class="heading_main text_align_left">
-                           <h2>About</h2>    
-                        </div>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                    </div>
-                    <div class="full paddding_left_15">
-                        <a class="main_bt" href="#">Read More ></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="full text_align_right_img">
-                        <img src="images/img3.png" alt="#" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
+
 	<!-- section -->
     <div class="section layout_padding padding_top_0">
         <div class="container">
