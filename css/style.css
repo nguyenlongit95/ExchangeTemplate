@@ -2430,6 +2430,12 @@ ul.bottom_menu li {
 	overflow: auto;
 }
 
+.wrap-home-currency-code {
+	width:100%;
+	height: auto;
+	overflow: auto;
+}
+
 #table-currency-code-home {
 	width:100%;
 	text-align: left;
